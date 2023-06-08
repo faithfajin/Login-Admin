@@ -4,7 +4,16 @@
     {
         public dashboard()
         {
+        }
+
+        public dashboard(string text)
+        {
             InitializeComponent();
+        }
+
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
