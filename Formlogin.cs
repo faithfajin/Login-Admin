@@ -10,7 +10,7 @@ namespace DesktopApp
             InitializeComponent();
         }
 
-        string CnS = "Host=localhost:5432;Username=postgres;Password=010304;Database=postgres";
+        string CnS = "Host=localhost:5432;Username=postgres;Password=faith010304;Database=postgres";
 
 
         private void Formlogin_Load(object sender, EventArgs e)
