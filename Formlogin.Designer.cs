@@ -49,10 +49,11 @@
             label5.AutoSize = true;
             label5.Cursor = Cursors.Hand;
             label5.FlatStyle = FlatStyle.Flat;
+            label5.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(55, 163, 165);
             label5.Location = new Point(514, 467);
             label5.Name = "label5";
-            label5.Size = new Size(47, 17);
+            label5.Size = new Size(55, 23);
             label5.TabIndex = 23;
             label5.Text = "Keluar";
             label5.Click += label5_Click;
@@ -61,10 +62,11 @@
             // 
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
+            label4.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(164, 165, 169);
             label4.Location = new Point(457, 451);
             label4.Name = "label4";
-            label4.Size = new Size(166, 17);
+            label4.Size = new Size(183, 23);
             label4.TabIndex = 22;
             label4.Text = "Administrator Akses Only";
             label4.Click += label4_Click;
@@ -76,6 +78,7 @@
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.Location = new Point(390, 375);
             button1.Name = "button1";
@@ -91,10 +94,11 @@
             checkBoxTampilkanPassword.AutoSize = true;
             checkBoxTampilkanPassword.Cursor = Cursors.Hand;
             checkBoxTampilkanPassword.FlatStyle = FlatStyle.Flat;
+            checkBoxTampilkanPassword.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             checkBoxTampilkanPassword.ForeColor = Color.FromArgb(164, 165, 169);
-            checkBoxTampilkanPassword.Location = new Point(537, 341);
+            checkBoxTampilkanPassword.Location = new Point(520, 341);
             checkBoxTampilkanPassword.Name = "checkBoxTampilkanPassword";
-            checkBoxTampilkanPassword.Size = new Size(150, 21);
+            checkBoxTampilkanPassword.Size = new Size(168, 27);
             checkBoxTampilkanPassword.TabIndex = 19;
             checkBoxTampilkanPassword.Text = "Tampilkan Password";
             checkBoxTampilkanPassword.UseVisualStyleBackColor = true;
@@ -105,7 +109,7 @@
             txtPassword.Anchor = AnchorStyles.None;
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
-            txtPassword.Font = new Font("Arial Narrow", 18.75F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtPassword.Location = new Point(390, 303);
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
@@ -117,10 +121,11 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
+            label3.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(164, 165, 169);
             label3.Location = new Point(387, 283);
             label3.Name = "label3";
-            label3.Size = new Size(66, 17);
+            label3.Size = new Size(75, 23);
             label3.TabIndex = 15;
             label3.Text = "Password";
             // 
@@ -129,7 +134,7 @@
             txtUsername.Anchor = AnchorStyles.None;
             txtUsername.BackColor = Color.FromArgb(230, 231, 233);
             txtUsername.BorderStyle = BorderStyle.None;
-            txtUsername.Font = new Font("Arial Narrow", 18.75F, FontStyle.Bold, GraphicsUnit.Point);
+            txtUsername.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtUsername.Location = new Point(390, 238);
             txtUsername.Multiline = true;
             txtUsername.Name = "txtUsername";
@@ -141,10 +146,11 @@
             // 
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
+            label2.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(164, 165, 169);
             label2.Location = new Point(387, 218);
             label2.Name = "label2";
-            label2.Size = new Size(69, 17);
+            label2.Size = new Size(80, 23);
             label2.TabIndex = 13;
             label2.Text = "Username";
             // 
@@ -152,11 +158,11 @@
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Poppins", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(164, 165, 169);
             label1.Location = new Point(482, 185);
             label1.Name = "label1";
-            label1.Size = new Size(123, 21);
+            label1.Size = new Size(122, 26);
             label1.TabIndex = 12;
             label1.Text = "Silahkan Login";
             label1.Click += label1_Click;
@@ -178,12 +184,12 @@
             // 
             label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
-            label6.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Font = new Font("Poppins", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(55, 163, 165);
             label6.ImeMode = ImeMode.NoControl;
-            label6.Location = new Point(457, 159);
+            label6.Location = new Point(457, 148);
             label6.Name = "label6";
-            label6.Size = new Size(165, 27);
+            label6.Size = new Size(174, 42);
             label6.TabIndex = 26;
             label6.Text = "Admin Panel";
             // 
