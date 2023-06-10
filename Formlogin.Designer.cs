@@ -45,6 +45,7 @@
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Cursor = Cursors.Hand;
             label5.FlatStyle = FlatStyle.Flat;
@@ -58,6 +59,7 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.ForeColor = Color.FromArgb(164, 165, 169);
             label4.Location = new Point(457, 451);
@@ -69,6 +71,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.None;
             button1.BackColor = Color.FromArgb(55, 163, 165);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
@@ -84,6 +87,7 @@
             // 
             // checkBoxTampilkanPassword
             // 
+            checkBoxTampilkanPassword.Anchor = AnchorStyles.None;
             checkBoxTampilkanPassword.AutoSize = true;
             checkBoxTampilkanPassword.Cursor = Cursors.Hand;
             checkBoxTampilkanPassword.FlatStyle = FlatStyle.Flat;
@@ -98,6 +102,7 @@
             // 
             // txtPassword
             // 
+            txtPassword.Anchor = AnchorStyles.None;
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("Arial Narrow", 18.75F, FontStyle.Regular, GraphicsUnit.Point);
@@ -110,6 +115,7 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.ForeColor = Color.FromArgb(164, 165, 169);
             label3.Location = new Point(387, 283);
@@ -120,6 +126,7 @@
             // 
             // txtUsername
             // 
+            txtUsername.Anchor = AnchorStyles.None;
             txtUsername.BackColor = Color.FromArgb(230, 231, 233);
             txtUsername.BorderStyle = BorderStyle.None;
             txtUsername.Font = new Font("Arial Narrow", 18.75F, FontStyle.Bold, GraphicsUnit.Point);
@@ -132,6 +139,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.ForeColor = Color.FromArgb(164, 165, 169);
             label2.Location = new Point(387, 218);
@@ -142,6 +150,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(164, 165, 169);
@@ -154,21 +163,24 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.ImageLocation = "";
             pictureBox1.Location = new Point(495, 63);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(100, 100);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 25;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
             // label6
             // 
+            label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
             label6.Font = new Font("MS UI Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(55, 163, 165);
+            label6.ImeMode = ImeMode.NoControl;
             label6.Location = new Point(457, 159);
             label6.Name = "label6";
             label6.Size = new Size(165, 27);
@@ -179,6 +191,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.White;
             ClientSize = new Size(1080, 600);
             Controls.Add(label6);
@@ -193,10 +206,10 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "Formlogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Formlogin";
+            WindowState = FormWindowState.Maximized;
             Load += Formlogin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
