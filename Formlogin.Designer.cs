@@ -214,7 +214,7 @@
             Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             Name = "Formlogin";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Formlogin";
+            Text = "FormloginAdmin";
             WindowState = FormWindowState.Maximized;
             Load += Formlogin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
