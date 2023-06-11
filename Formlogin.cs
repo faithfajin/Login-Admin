@@ -1,4 +1,5 @@
 ﻿using Login_dan_Register_Project_PBO_A;
+using Npgsql;
 
 namespace DesktopApp
 {
@@ -9,7 +10,7 @@ namespace DesktopApp
             InitializeComponent();
         }
 
-        //string CnS = "Host=localhost:5432;Username=postgres;Password=faith010304;Database=postgres";
+        string CnS = "Host=localhost:5432;Username=postgres;Password=faith010304;Database=postgres";
 
 
         private void Formlogin_Load(object sender, EventArgs e)
@@ -34,38 +35,35 @@ namespace DesktopApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Selemat datang ", "login berhasil");
-            new dashboard().Show();
-            this.Hide();
-            //using (NpgsqlConnection connection = new NpgsqlConnection(CnS))
-            //{
-            //    connection.Open();
-            //    {
-            //        if (txtPassword.Text != string.Empty || txtUsername.Text != string.Empty)
-            //        {
+            using (NpgsqlConnection connection = new NpgsqlConnection(CnS))
+            {
+                connection.Open();
+                {
+                    if (txtPassword.Text != string.Empty || txtUsername.Text != string.Empty)
+                    {
 
-            //            NpgsqlCommand command = new NpgsqlCommand("select * from table_admin where username='" + txtUsername.Text + "' and password='" + txtPassword.Text + "'", connection);
-            //            NpgsqlDataReader dr = command.ExecuteReader();
-            //            if (dr.Read())
-            //            {
-            //                MessageBox.Show("Selemat datang ", "login berhasil");
-            //                dashboard form2 = new dashboard();
-            //                form2.Show();
-            //                this.Hide();
-            //            }
-            //            else
-            //            {
-            //                dr.Close();
-            //                MessageBox.Show("Silahkan periksa kembali username and password ", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //            }
+                        NpgsqlCommand command = new NpgsqlCommand("select * from table_admin where username='" + txtUsername.Text + "' and password='" + txtPassword.Text + "'", connection);
+                        NpgsqlDataReader dr = command.ExecuteReader();
+                        if (dr.Read())
+                        {
+                            MessageBox.Show("Selemat datang ", "login berhasil");
+                            dashboard form2 = new dashboard();
+                            form2.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            dr.Close();
+                            MessageBox.Show("Silahkan periksa kembali username and password ", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
 
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("Silahkan isi username dan password.", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        }
-            //    }
-            //}
+                    }
+                    else
+                    {
+                        MessageBox.Show("Silahkan isi username dan password.", "Gagal login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
 
 
         }
