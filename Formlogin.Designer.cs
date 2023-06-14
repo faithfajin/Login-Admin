@@ -32,7 +32,6 @@
             label5 = new Label();
             label4 = new Label();
             button1 = new Button();
-            checkBoxTampilkanPassword = new CheckBox();
             txtPassword = new TextBox();
             label3 = new Label();
             txtUsername = new TextBox();
@@ -40,12 +39,14 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             label6 = new Label();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label5
             // 
-            label5.Anchor = AnchorStyles.None;
+            label5.Anchor = AnchorStyles.Top;
             label5.AutoSize = true;
             label5.Cursor = Cursors.Hand;
             label5.FlatStyle = FlatStyle.Flat;
@@ -60,7 +61,7 @@
             // 
             // label4
             // 
-            label4.Anchor = AnchorStyles.None;
+            label4.Anchor = AnchorStyles.Top;
             label4.AutoSize = true;
             label4.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(164, 165, 169);
@@ -73,7 +74,7 @@
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.None;
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             button1.BackColor = Color.FromArgb(55, 163, 165);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
@@ -88,25 +89,9 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // checkBoxTampilkanPassword
-            // 
-            checkBoxTampilkanPassword.Anchor = AnchorStyles.None;
-            checkBoxTampilkanPassword.AutoSize = true;
-            checkBoxTampilkanPassword.Cursor = Cursors.Hand;
-            checkBoxTampilkanPassword.FlatStyle = FlatStyle.Flat;
-            checkBoxTampilkanPassword.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBoxTampilkanPassword.ForeColor = Color.FromArgb(164, 165, 169);
-            checkBoxTampilkanPassword.Location = new Point(520, 341);
-            checkBoxTampilkanPassword.Name = "checkBoxTampilkanPassword";
-            checkBoxTampilkanPassword.Size = new Size(168, 27);
-            checkBoxTampilkanPassword.TabIndex = 19;
-            checkBoxTampilkanPassword.Text = "Tampilkan Password";
-            checkBoxTampilkanPassword.UseVisualStyleBackColor = true;
-            checkBoxTampilkanPassword.CheckedChanged += checkBoxTampilkanPassword_CheckedChanged;
-            // 
             // txtPassword
             // 
-            txtPassword.Anchor = AnchorStyles.None;
+            txtPassword.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtPassword.BackColor = Color.FromArgb(230, 231, 233);
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -119,7 +104,6 @@
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(164, 165, 169);
@@ -131,7 +115,7 @@
             // 
             // txtUsername
             // 
-            txtUsername.Anchor = AnchorStyles.None;
+            txtUsername.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtUsername.BackColor = Color.FromArgb(230, 231, 233);
             txtUsername.BorderStyle = BorderStyle.None;
             txtUsername.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -144,7 +128,6 @@
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(164, 165, 169);
@@ -156,7 +139,7 @@
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.None;
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Poppins", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(164, 165, 169);
@@ -169,7 +152,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.None;
+            pictureBox1.Anchor = AnchorStyles.Top;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.ImageLocation = "";
             pictureBox1.Location = new Point(495, 63);
@@ -182,7 +165,7 @@
             // 
             // label6
             // 
-            label6.Anchor = AnchorStyles.None;
+            label6.Anchor = AnchorStyles.Top;
             label6.AutoSize = true;
             label6.Font = new Font("Poppins", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(55, 163, 165);
@@ -193,19 +176,47 @@
             label6.TabIndex = 26;
             label6.Text = "Admin Panel";
             // 
+            // button2
+            // 
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button2.BackColor = Color.FromArgb(230, 231, 233);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(645, 303);
+            button2.Name = "button2";
+            button2.Size = new Size(35, 35);
+            button2.TabIndex = 27;
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button3.BackColor = Color.FromArgb(230, 231, 233);
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.Location = new Point(645, 303);
+            button3.Name = "button3";
+            button3.Size = new Size(35, 35);
+            button3.TabIndex = 28;
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // Formlogin
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
             BackColor = Color.White;
             ClientSize = new Size(1080, 600);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(label6);
             Controls.Add(pictureBox1);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(button1);
-            Controls.Add(checkBoxTampilkanPassword);
             Controls.Add(txtPassword);
             Controls.Add(label3);
             Controls.Add(txtUsername);
@@ -227,7 +238,6 @@
         private Label label5;
         private Label label4;
         private Button button1;
-        private CheckBox checkBoxTampilkanPassword;
         private TextBox txtPassword;
         private Label label3;
         private TextBox txtUsername;
@@ -235,5 +245,7 @@
         private Label label1;
         private PictureBox pictureBox1;
         private Label label6;
+        private Button button2;
+        private Button button3;
     }
 }

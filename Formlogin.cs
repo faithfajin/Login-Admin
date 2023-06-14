@@ -69,18 +69,6 @@ namespace DesktopApp
         }
 
 
-        private void checkBoxTampilkanPassword_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxTampilkanPassword.Checked)
-            {
-                txtPassword.PasswordChar = '\0';
-            }
-            else
-            {
-                txtPassword.PasswordChar = '*';
-            }
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -91,5 +79,22 @@ namespace DesktopApp
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*')
+            {
+                button2.BringToFront();
+                txtPassword.PasswordChar = '\0';
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '\0')
+            {
+                button3.BringToFront();
+                txtPassword.PasswordChar = '*';
+            }
+        }
     }
 }
